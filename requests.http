@@ -1,0 +1,12 @@
+### Login com as credenciais de teste
+POST http://localhost:8080/rest/auth/login
+Content-Type: application/json
+
+{
+  "email": "teste@email.com",
+  "password": "123456"
+}
+
+### Acesse /rest/home substituindo <TOKEN> pelo token retornado no login
+GET http://localhost:8080/rest/home
+Authorization: Bearer <TOKEN>
